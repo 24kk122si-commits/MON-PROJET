@@ -460,13 +460,27 @@ main{
 
 
 
-.contact-page{
-    flex:1;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    padding:40px 20px;
+/* Remplace ou complète la section .contact-page */
+.contact-page {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centre verticalement */
+    align-items: center;     /* Centre horizontalement */
+    padding: 60px 20px;
+    width: 100%;
+    max-width: 1200px;       /* Empêche l'étirement excessif */
+    margin: 0 auto;          /* Centre le bloc sur les grands écrans */
+}
+
+/* Correction du formulaire pour qu'il soit bien aligné */
+form {
+    width: 100%;
+    max-width: 450px; /* Taille optimale sur PC */
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 
@@ -598,40 +612,42 @@ img{
 
 
 /* ===== CONTACT MOBILE FIX ===== */
-@media (max-width:768px){
-
-    .contact-page{
-        width:100%;
-        padding:20px;
-        display:flex;
-        flex-direction:column;
-        align-items:center;
-        justify-content:center;
+@media (max-width: 768px) {
+    /* On réduit les marges pour gagner de la place */
+    .contact-page {
+        padding: 30px 15px;
     }
 
-    form{
-        width:100%;
-        max-width:400px;
+    h2 {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
     }
+form {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    input, button {
+        font-size: 16px; /* Évite le zoom automatique sur iPhone */
+    }
+}
 
     input, button{
         width:100%;
         font-size:16px;
     }
 
-    .contact-box{
-        width:100%;
-        display:flex;
-        flex-direction:column;
-        gap:15px;
-        align-items:center;
-        margin-top:20px;
+   .contact-box {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
     }
 
-    .contact-btn{
-        width:100%;
-        max-width:300px;
-        text-align:center;
+    .contact-btn {
+        width: 90%; /* Presque toute la largeur */
+        text-align: center;
+        padding: 12px;
     }
 
 }
