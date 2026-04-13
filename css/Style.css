@@ -523,7 +523,7 @@ main{
 @media (max-width:768px){
 
     .container{
-        width:100%;
+        width:92%;
         padding:0 10px;
     }
 
@@ -540,11 +540,9 @@ main{
     .card img{
         width:100%;
         height:auto;
+        display:block;
+        border-radius:10px;
     }
-
-}
-
-
 
 
 @media (max-width:768px){
@@ -560,4 +558,80 @@ main{
 img{
     max-width:100%;
     display:block;
+}
+
+
+
+
+
+
+@media (max-width:768px){
+
+    .cards{
+        display:flex;
+        flex-direction:column;
+        align-items:center; /* CENTRE */
+    }
+
+    .card{
+        width:95%;
+        margin:0 auto; /* CENTRE */
+    }
+
+}
+
+}
+
+
+
+
+
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+
+
+
+
+
+/* ===== CONTACT MOBILE FIX ===== */
+@media (max-width:768px){
+
+    .contact-page{
+        width:100%;
+        padding:20px;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+    }
+
+    form{
+        width:100%;
+        max-width:400px;
+    }
+
+    input, button{
+        width:100%;
+        font-size:16px;
+    }
+
+    .contact-box{
+        width:100%;
+        display:flex;
+        flex-direction:column;
+        gap:15px;
+        align-items:center;
+        margin-top:20px;
+    }
+
+    .contact-btn{
+        width:100%;
+        max-width:300px;
+        text-align:center;
+    }
+
 }
